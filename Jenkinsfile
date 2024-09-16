@@ -9,7 +9,7 @@ pipeline {
         // DOCKER_IMAGE_TAG = 'keer:latest' // Update with your desired image name and tag
         DOCKER_IMAGE_NAME = 'jenkins-new'
         // DOCKER_IMAGE_TAG = 'latest'  
-        REGISTRY_IMAGE = "docker.io/yashnah/jenkins-new:v1"
+        REGISTRY_IMAGE = "docker.io/yashnah/jenkins-new:${BUILD_NUMBER}"
         SONAR_PROJECT_KEY = 'new-sonar-key'
         // DOCKER_REGISTRY = 'https://hub.docker.com/r/rakshashenoy/keer'
         registryCredential = 'docker-cred'
