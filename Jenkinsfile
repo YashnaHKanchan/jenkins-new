@@ -10,7 +10,7 @@ pipeline {
         DOCKER_IMAGE_NAME = 'ng'
         // DOCKER_IMAGE_TAG = 'latest'
         REGISTRY_IMAGE = "docker.io/yashnah/ng:v1"
-        // SONAR_PROJECT_KEY = 'new-demo-jenkins'
+        SONAR_PROJECT_KEY = 'new-sonar-key'
         // DOCKER_REGISTRY = 'https://hub.docker.com/r/rakshashenoy/keer'
         registryCredential = 'docker-cred'
         // ARGO_ADMIN = "credentials('argo-cred').username"
