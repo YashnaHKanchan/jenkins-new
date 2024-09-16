@@ -7,7 +7,7 @@ spec:
   project: default
  
   source:
-    repoURL: https://github.com/YashnaHKnachan/jenkins-new.git
+    repoURL: https://github.com/YashnaHKanchan/jenkins-new.git
     targetRevision: HEAD
     path: dev
   destination:
