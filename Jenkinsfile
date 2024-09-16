@@ -9,7 +9,7 @@ pipeline {
         // DOCKER_IMAGE_TAG = 'keer:latest' // Update with your desired image name and tag
         DOCKER_IMAGE_NAME = 'ng'
         // DOCKER_IMAGE_TAG = 'latest'
-        REGISTRY_IMAGE = "docker.io/yashnah/ng:v1"
+        REGISTRY_IMAGE = "docker.io/yashnah/ng:latest"
         SONAR_PROJECT_KEY = 'new-sonar-key'
         // DOCKER_REGISTRY = 'https://hub.docker.com/r/rakshashenoy/keer'
         registryCredential = 'docker-cred'
