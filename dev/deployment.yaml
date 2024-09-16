@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-nginx-new
+spec:
+  selector:
+    matchLabels:
+      app: demo-nginx-new
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: demo-nginx-new
+    spec:
+      containers:
+      - name: demo-nginx-new
+        image: yashnah/jenkins-new:latest
+        ports:
+        - containerPort: 80
