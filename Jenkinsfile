@@ -19,7 +19,7 @@ pipeline {
      
     }
  
-    // stages {
+    stages {
     //     stage('SonarQube Scan') {
     //         steps {
     //             script{
