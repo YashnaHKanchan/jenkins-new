@@ -3,7 +3,7 @@ pipeline {
  
     environment {
  
-        SCANNER_HOME = tool 'sonar-scanner'
+        SCANNER_HOME = tool 'sonar-server'
        
         DOCKERFILE_PATH = 'C:\\Users\\YashnaHKanchan\\Jenkins-new\\nginx\\Dockerfile' // Update this with your Dockerfile path
         // DOCKER_IMAGE_TAG = 'keer:latest' // Update with your desired image name and tag
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script{
                     // def props = readProperties file: 'sonar-project.properties'
-                    withSonarQubeEnv('sonar-scanner') {
+                    withSonarQubeEnv('sonar-server') {
                         bat "${SCANNER_HOME}/bin/sonar-scanner -Dsonar.projectKey=${SONAR_PROJECT_KEY}"
  
                     }
