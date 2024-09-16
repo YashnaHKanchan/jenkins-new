@@ -3,7 +3,7 @@ pipeline {
  
     environment {
  
-        SCANNER_HOME = tool 'sonar'
+        SCANNER_HOME = tool 'sonar-scanner'
        
         DOCKERFILE_PATH = 'C:\\Users\\YashnaHKanchan\\Jenkins-new\\nginx\\Dockerfile' // Update this with your Dockerfile path
         // DOCKER_IMAGE_TAG = 'keer:latest' // Update with your desired image name and tag
