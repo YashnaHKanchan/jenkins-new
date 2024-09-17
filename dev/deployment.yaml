@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: demo-nginx-new
-        image: yashnah/jenkins-new:24
+        image: yashnah/jenkins-new:25
         ports:
         - containerPort: 80
