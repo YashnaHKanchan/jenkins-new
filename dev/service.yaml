@@ -5,9 +5,7 @@ metadata:
 spec:
   selector:
     app: demo-nginx-new
-  ports:
-  - port: 80
+   ports:
+  - port: 3000
     protocol: TCP
-    targetPort: 80
-   nodePort: 30010  
-  type: NodePort
+    targetPort: 3000
